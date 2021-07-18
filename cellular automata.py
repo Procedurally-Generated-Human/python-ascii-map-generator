@@ -5,7 +5,7 @@ import numpy as np
 def create_world(height,width,percent):    
     numbers = np.random.uniform(0,1,h*w)
     for index,value in enumerate(numbers):
-        if value >= percent/100:
+        if value >= (100-percent)/100:
             numbers[index] = 1
         else:
             numbers[index] = 0
